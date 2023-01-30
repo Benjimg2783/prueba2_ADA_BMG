@@ -1,0 +1,24 @@
+a) ¿Qué conseguiríamos si pusiéramos la anotación “fetch = FetchType.LAZY”?
+
+Significa que los datos solo sa cargaran en el momento en que se acceda a ellos, lo que puede mejorar el rendimiento.
+
+b) ¿Qué hace la siguiente instrucción?
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+Indica que la clave primaria de una tabla será generada de manera automática y se irá incrementando
+conforme vayamos insertando objetos de esa clase
+
+c) Explica con tus palabras el término “Desfase Entidad-Relación”
+
+El Desfase Entidad-Relación se refiere a la diferencia o desajuste entre la representación de los datos en un modelo conceptual
+ de datos y su implementación en un sistema de gestión de bases de datos relacionales. Esto suele suceder porque los modelos
+ conceptuales se siimplifican y se abstraen de la realidad para que se entiendan mejor.
+
+d) ¿Qué diferencia hay entre un objeto “managed” y un objeto “detached”?
+
+Los cambios realizados en un objeto managed se verán reflejados automáticamente en la base de datos al realizar un commit.
+Mientras que los realizados en un objetos detached habrá que realizar un merge para ver reflejados dichos datos.
+
+e) ¿Qué hace el método “persist()” de JPA? ¿Nos devuelve algo ese método?
+
+El método persist se usa para almacenar un objeto en la base de datos. Este método no devulve nada.
